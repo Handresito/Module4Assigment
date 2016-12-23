@@ -7,6 +7,6 @@
   RestaurantController.$inject = ['categories'];
   function RestaurantController(categories){
     var vm = this;
-    vm.categories = categories;
+    vm.categories = categories.data;
   }
 })();

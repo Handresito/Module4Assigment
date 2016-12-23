@@ -1,6 +1,7 @@
 &lt; <a ui-sref="home">Home</a>
 <ul>
-  <li ng-repeat="category in RestaurantCtrl.categories">
+  <li ng-repeat="category in controller.categories"
+  ui-sref="categories.items({categoryId:category.id})">
     {{category.name}}
   </li>
 </ul>
