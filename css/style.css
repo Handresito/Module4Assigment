@@ -1,3 +1,15 @@
 body{
   font-family: fantasy;
 }
+
+.categoriesLink{
+  color: blue;
+}
+
+li[ui-sref]:hover{
+  display: inline-block;
+  cursor: pointer;
+  border: solid black 1px;
+  padding-left: 5p;
+  padding-right: 5px;
+}
