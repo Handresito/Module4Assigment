@@ -16,10 +16,13 @@
       return response;
     };
 
-    service.getCategoryById = function(id){
+    service.getItemsForCategory = function(categoryShortName){
       var response = $http({
         method: 'GET',
-        url: ApiBasePath + "/categories/" + id + ".json"
+        url: ApiBasePath + "/menu_items.json",
+        params: {
+          category: categoryShortName
+        }
       });
       return response;
     }

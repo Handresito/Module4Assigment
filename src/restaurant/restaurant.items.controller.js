@@ -4,12 +4,13 @@
   angular.module("RestaurantApp")
   .controller("ItemsController", ItemsController);
 
-  ItemsController.$inject = ['$stateParams','categories', 'category'];
+  ItemsController.$inject = ['$stateParams','category'];
 
-  function ItemsController($stateParams, categories, category){
+  function ItemsController($stateParams, category){
     var vm = this;
 
-    var category = category;   
+    vm.categories = category.data.menu_items;
+
 
 
     vm.name = category.name;

@@ -1,5 +1,6 @@
-<div class="">
-  {{itemCtrl.name}}
-  {{itemCtrl.shortName}}
-  {{itemCtrl.instructions}}
-</div>
+&lt; <a ui-sref="categories">Categories</a>
+<ul>
+  <li ng-repeat="item in itemCtrl.categories">
+    {{item.name}}
+  </li>
+</ul>
