@@ -1,10 +1,8 @@
 body{
   font-family: fantasy;
+  background-color: #C0C0C0;
 }
 
-.categoriesLink{
-  color: blue;
-}
 
 li[ui-sref]:hover{
   display: inline-block;
